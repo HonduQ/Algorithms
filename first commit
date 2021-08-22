@@ -1,0 +1,13 @@
+//return sum of all positive numbers up to n
+
+function recursion(n){
+
+//breakout statement
+  if (n<1){
+      return n;
+  }
+
+//call function recursively
+  return n+recursion(n-1);
+
+}
