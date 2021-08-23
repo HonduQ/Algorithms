@@ -1,0 +1,15 @@
+function fibonacci(n){
+//(given) if n == 0 or 1, return n
+  if (n==0 || n==1){
+      //tracking progress of n
+      //console.log("n is now", n);
+      return n;
+  }
+  
+  //fibonacci sequence
+  if (n>1){
+      //tracking progress of n
+      //console.log("n is now", n);
+      return fibonacci(n-2)+fibonacci(n-1);
+  }
+}
