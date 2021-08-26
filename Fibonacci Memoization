@@ -1,0 +1,13 @@
+let count = 0;
+let fibonacci = [0,1];
+let dynamic = [];
+
+function fib(n){
+  count++;
+  for (let i=2; i<n; i++){
+    fibonacci[i] = fibonacci[i-2] + fibonacci[i-1];
+    dynamic.push(fibonacci[i]);
+  }
+  console.log(fibonacci);
+  return fibonacci;
+}
