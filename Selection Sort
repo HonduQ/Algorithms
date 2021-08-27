@@ -1,0 +1,22 @@
+function selectionSort(arr){
+  //loop through each element of array
+  for (var i=0; i<arr.length; i++){
+    //set min and min_index values for comparisons
+    var min = arr[i];
+    var min_index = i;
+    //comparison loop
+    for (var j=i; j<arr.length; j++){
+      //compare current element to min value
+      if (arr[j] < min){
+        //if true, swap min and min_index values
+        min = arr[j];
+        min_index = j;
+      }
+    }
+    //swap min with arr[i]
+    var temp = arr[i];
+    arr[i] = min;
+    arr[min_index] = temp;
+  }
+  return arr;
+}
